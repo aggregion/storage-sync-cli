@@ -1,0 +1,30 @@
+{
+  "name": "cloud-storage-sync-cli",
+  "version": "0.9.0",
+  "description": "CLI utility for cloud-storage-sync.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jscs index.js lib/ bin/",
+    "pretest": "npm run lint",
+    "test": "mocha --reporter spec lib/**/*.spec.js"
+  },
+  "keywords": [
+    "amazon",
+    "azure",
+    "s3"
+  ],
+  "author": "Denis Bezrukov <anthrax63@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aggregion/storage-sync-cli.git"
+  },
+  "homepage": "https://github.com/aggregion/storage-sync-cli#readme",
+  "dependencies": {
+    "cli": "^0.11.2",
+    "cloud-storage-sync": "^0.9.6"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
+}
